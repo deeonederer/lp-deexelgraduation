@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deexel Graduation | Outdoor Graduation Photography</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: '#161e2d',
+                            light: '#232f46',
+                            dark: '#0c111a',
+                        },
+                        gold: {
+                            DEFAULT: '#b99151',
+                            light: '#cfa665',
+                            dark: '#9a7740',
+                        },
+                        cream: {
+                            DEFAULT: '#fbf9f4',
+                            dark: '#eeeada',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                        serif: ['Playfair Display', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #fbf9f4; overflow-x: hidden; }
+        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="text-gray-800 antialiased bg-cream">
+
+    <!-- Navbar -->
+    <nav class="bg-cream shadow-md fixed w-full z-50 top-0 border-b border-cream-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo & Teks Manual -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#home" class="flex items-center gap-3 group">
+                        <img src="logo.png" alt="Logo" class="h-12 w-12 rounded-full shadow-sm group-hover:scale-105 transition duration-300 object-cover">
+                        <span class="font-bold text-2xl text-navy tracking-tight font-serif hidden sm:block">Deexel<span class="text-gold italic">Graduation.</span></span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-navy hover:text-gold transition font-medium">Beranda</a>
+                    <a href="#packages" class="text-navy hover:text-gold transition font-medium">Pricelist</a>
+                    <a href="#terms" class="text-navy hover:text-gold transition font-medium">Ketentuan</a>
+                    <a href="#portfolio" class="text-navy hover:text-gold transition font-medium">Portofolio</a>
+                </div>
+
+                <!-- Desktop CTA -->
+                <div class="hidden md:flex items-center">
+                    <a href="#contact" class="bg-gold hover:bg-gold-dark text-white px-6 py-2.5 rounded-full font-medium transition shadow-md hover:shadow-lg">
+                        Book Sekarang
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-navy hover:text-gold focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cream border-t border-cream-dark shadow-inner absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-navy hover:text-gold hover:bg-cream-dark">Beranda</a>
+                <a href="#packages" class="block px-3 py-2 rounded-md text-base font-medium text-navy hover:text-gold hover:bg-cream-dark">Pricelist</a>
+                <a href="#terms" class="block px-3 py-2 rounded-md text-base font-medium text-navy hover:text-gold hover:bg-cream-dark">Ketentuan</a>
+                <a href="#portfolio" class="block px-3 py-2 rounded-md text-base font-medium text-navy hover:text-gold hover:bg-cream-dark">Portofolio</a>
+                <a href="#contact" class="block mt-4 text-center px-3 py-3 rounded-md text-base font-medium bg-gold text-white hover:bg-gold-dark shadow-md">Book Sekarang</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 lg:pt-40 lg:pb-32 bg-navy text-cream overflow-hidden relative">
+        
+        <!-- Background Image -->
+        <img src="DSC03330.jpg" alt="Background Hero" class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-overlay">
+        <div class="absolute inset-0 bg-gradient-to-t from-navy to-transparent opacity-90"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="text-gold font-semibold tracking-widest uppercase text-xs md:text-sm mb-4 block">Outdoor Photography Service</span>
+            <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight">
+                Abadikan Momen Wisuda <br class="hidden md:block">
+                <span class="text-gold italic">Tak Terlupakanmu</span>
+            </h1>
+            
+            <!-- Deskripsi -->
+            <div class="max-w-3xl mx-auto mb-10">
+                <p class="text-lg md:text-xl text-gray-300 font-light mb-3">
+                    Layanan foto wisuda outdoor profesional Deexel Graduation di Pontianak dan sekitarnya untuk merayakan pencapaian terbesarmu. Mulai dari sesi personal hingga momen hangat bersama keluarga.
+                </p>
+                <p class="text-base md:text-lg text-gold font-serif italic opacity-90">
+                    "Professional outdoor graduation photography services to celebrate your greatest achievements. From personal portraits to heartwarming moments with family."
+                </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#packages" class="bg-gold text-white px-8 py-3.5 rounded-full font-semibold transition shadow-lg hover:bg-gold-light hover:scale-105">
+                    Lihat Paket
+                </a>
+                <a href="#contact" class="bg-transparent border-2 border-gold text-gold px-8 py-3.5 rounded-full font-semibold transition hover:bg-gold hover:text-white">
+                    Tanya Admin
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricelist Section -->
+    <section id="packages" class="py-24 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy mb-4">Pilihan Paket</h2>
+                <div class="h-1 w-20 bg-gold mx-auto mb-4"></div>
+                <p class="text-lg text-gray-600">Pilih paket yang paling sesuai dengan kebutuhan perayaanmu.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                
+                <!-- Paket Lite -->
+                <div class="bg-white rounded-2xl shadow-md border border-cream-dark p-8 hover:shadow-2xl transition-all duration-300 relative flex flex-col group">
+                    <h3 class="text-2xl font-bold text-navy mb-1 group-hover:text-gold transition">Paket Lite</h3>
+                    <div class="flex items-baseline mb-4">
+                        <span class="text-3xl font-extrabold text-navy">Rp 300k</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-6 font-medium bg-cream inline-block px-3 py-1 rounded-full border border-cream-dark">Cocok untuk solo portrait</p>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-start"><i class="fas fa-clock text-gold mt-1 mr-3 w-5 text-center"></i><span class="text-gray-600">Durasi 30 menit</span></li>
+                        <li class="flex items-start"><i class="fas fa-camera text-gold mt-1 mr-3 w-5 text-center"></i><span class="text-gray-600">20 Foto Edit</span></li>
+                        <li class="flex items-start"><i class="fas fa-download text-gold mt-1 mr-3 w-5 text-center"></i><span class="text-gray-600">Semua file asli (G-Drive)</span></li>
+                    </ul>
+                    <a href="#contact" class="w-full block text-center border-2 border-navy text-navy font-semibold py-3 rounded-xl hover:bg-navy hover:text-white transition">Pilih Lite</a>
+                </div>
+
+                <!-- Paket Basic (Terpopuler) -->
+                <div class="bg-navy rounded-2xl shadow-xl border-2 border-gold p-8 hover:shadow-2xl transition-all duration-300 relative flex flex-col transform md:-translate-y-4">
+                    <div class="absolute top-0 right-0 bg-gold text-white text-xs font-bold px-4 py-1.5 rounded-bl-xl rounded-tr-xl uppercase tracking-wider shadow-md">
+                        Terpopuler
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-1">Paket Basic</h3>
+                    <div class="flex items-baseline mb-4">
+                        <span class="text-3xl font-extrabold text-gold">Rp 400k</span>
+                    </div>
+                    <p class="text-sm text-cream mb-6 font-medium bg-navy-light inline-block px-3 py-1 rounded-full border border-gray-600">Cocok untuk solo & couple</p>
+                    <ul class="space-y-4 mb-8 flex-1 text-gray-300">
+                        <li class="flex items-start"><i class="fas fa-clock text-gold mt-1 mr-3 w-5 text-center"></i><span>Durasi 40 menit</span></li>
+                        <li class="flex items-start"><i class="fas fa-camera text-gold mt-1 mr-3 w-5 text-center"></i><span>30 Foto Edit</span></li>
+                        <li class="flex items-start"><i class="fas fa-download text-gold mt-1 mr-3 w-5 text-center"></i><span>Semua file asli (G-Drive)</span></li>
+                    </ul>
+                    <a href="#contact" class="w-full block text-center bg-gold text-white font-semibold py-3 rounded-xl hover:bg-gold-light transition shadow-lg hover:shadow-xl">Pilih Basic</a>
+                </div>
+
+                <!-- Paket Premium -->
+                <div class="bg-white rounded-2xl shadow-md border border-cream-dark p-8 hover:shadow-2xl transition-all duration-300 relative flex flex-col group">
+                    <h3 class="text-2xl font-bold text-navy mb-1 group-hover:text-gold transition">Paket Premium</h3>
+                    <div class="flex items-baseline mb-4">
+                        <span class="text-3xl font-extrabold text-navy">Rp 500k</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-6 font-medium bg-cream inline-block px-3 py-1 rounded-full border border-cream-dark">Cocok untuk grup & teman</p>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-start"><i class="fas fa-clock text-gold mt-1 mr-3 w-5 text-center"></i><span class="text-gray-600">Durasi 55 menit</span></li>
+                        <li class="flex items-start"><i class="fas fa-camera text-gold mt-1 mr-3 w-5 text-center"></i><span class="text-gray-600">40 Foto Edit</span></li>
+                        <li class="flex items-start"><i class="fas fa-download text-gold mt-1 mr-3 w-5 text-center"></i><span class="text-gray-600">Semua file asli (G-Drive)</span></li>
+                    </ul>
+                    <a href="#contact" class="w-full block text-center border-2 border-navy text-navy font-semibold py-3 rounded-xl hover:bg-navy hover:text-white transition">Pilih Premium</a>
+                </div>
+
+                <!-- Paket Ultimate -->
+                <div class="bg-white rounded-2xl shadow-md border border-cream-dark p-8 hover:shadow-2xl transition-all duration-300 relative flex flex-col group">
+                    <h3 class="text-2xl font-bold text-navy mb-1 group-hover:text-gold transition">Paket Ultimate</h3>
+                    <div class="flex items-baseline mb-4">
+                        <span class="text-3xl font-extrabold text-navy">Rp 600k</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-6 font-medium bg-cream inline-block px-3 py-1 rounded-full border border-cream-dark">Cocok untuk sesi keluarga intimate dan selanjutnya sesi solo</p>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-start"><i class="fas fa-clock text-gold mt-1 mr-3 w-5 text-center"></i><span class="text-gray-600">Durasi 70 menit</span></li>
+                        <li class="flex items-start"><i class="fas fa-camera text-gold mt-1 mr-3 w-5 text-center"></i><span class="text-gray-600">40 Foto Edit</span></li>
+                        <li class="flex items-start"><i class="fas fa-download text-gold mt-1 mr-3 w-5 text-center"></i><span class="text-gray-600">Semua file asli (G-Drive)</span></li>
+                    </ul>
+                    <a href="#contact" class="w-full block text-center border-2 border-navy text-navy font-semibold py-3 rounded-xl hover:bg-navy hover:text-white transition">Pilih Ultimate</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms and Benefits Section -->
+    <section id="terms" class="py-24 bg-white border-y border-cream-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-navy rounded-3xl overflow-hidden p-8 lg:p-14 shadow-2xl relative">
+                <div class="absolute top-0 right-0 -mt-4 -mr-4 w-32 h-32 bg-gold opacity-10 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 -mb-4 -ml-4 w-40 h-40 bg-gold opacity-10 rounded-full blur-3xl"></div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center relative z-10">
+                    <div>
+                        <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">Syarat, Ketentuan & Fasilitas</h2>
+                        <p class="text-gray-300 mb-10 leading-relaxed font-light">
+                            Kami ingin memastikan momen bahagiamu terabadikan dengan maksimal tanpa syarat yang ribet. Berikut fasilitas yang kamu dapatkan di <span class="text-gold font-semibold">semua paket</span>:
+                        </p>
+                        
+                        <div class="space-y-8">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-12 w-12 rounded-full bg-navy-light border border-gold text-gold">
+                                        <i class="fas fa-images text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-5">
+                                    <h4 class="text-lg font-semibold text-white">Keep Semua Momen</h4>
+                                    <p class="mt-2 text-sm md:text-base text-gray-400">Semua foto asli (mentahan) akan diberikan kepada klien tanpa terkecuali.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-12 w-12 rounded-full bg-navy-light border border-gold text-gold">
+                                        <i class="fab fa-google-drive text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-5">
+                                    <h4 class="text-lg font-semibold text-white">Akses Google Drive</h4>
+                                    <p class="mt-2 text-sm md:text-base text-gray-400">File foto akan dikirimkan melalui link Google Drive yang valid dan bisa diunduh selama 2 minggu (14 Hari).</p>
+                                </div>
+                            </div>
+
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-12 w-12 rounded-full bg-navy-light border border-gold text-gold">
+                                        <i class="fas fa-users text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-5">
+                                    <h4 class="text-lg font-semibold text-white">Bebas Jumlah Orang</h4>
+                                    <p class="mt-2 text-sm md:text-base text-gray-400">Tidak ada batasan maksimal orang dalam frame. <br><em class="text-gold opacity-80 text-xs mt-1 block">*Note: Semakin banyak orang, durasi akan lebih banyak terpakai untuk mengatur gaya (directing).</em></p>
+                                </div>
+                            </div>
+
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-12 w-12 rounded-full bg-navy-light border border-gold text-gold">
+                                        <i class="fas fa-money-bill-wave text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-5">
+                                    <h4 class="text-lg font-semibold text-white">Sistem Booking</h4>
+                                    <p class="mt-2 text-sm md:text-base text-gray-400">Booking tanggal dilakukan dengan membayarkan DP (Down Payment) sebesar <strong class="text-white">Rp. 100.000</strong> untuk semua pilihan paket.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Area Foto S&K -->
+                    <div class="relative h-full min-h-[400px] rounded-2xl overflow-hidden shadow-2xl hidden lg:block border-4 border-navy-light bg-navy-dark">
+                        <img src="DSC03889.jpg" alt="Fasilitas Wisuda" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gold mix-blend-multiply opacity-20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section (Full Width & Gapless) -->
+    <section id="portfolio" class="pt-24 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy mb-4">Galeri Portofolio</h2>
+                <div class="h-1 w-20 bg-gold mx-auto mb-4"></div>
+                <p class="text-lg text-gray-600">Beberapa momen indah yang pernah kami abadikan.</p>
+            </div>
+        </div>
+
+        <!-- Grid Foto Dempetan & Full Width (Menggunakan list foto dari gambar) -->
+        <div class="w-full grid grid-cols-2 md:grid-cols-4 gap-0">
+            <!-- Item 1 -->
+            <div class="aspect-[4/5] overflow-hidden bg-navy-dark group relative">
+                <img src="DSC03633.jpg" alt="Portfolio 1" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 ease-in-out">
+                <div class="absolute inset-0 bg-navy opacity-0 group-hover:opacity-20 transition duration-500"></div>
+            </div>
+            <!-- Item 2 -->
+            <div class="aspect-[4/5] overflow-hidden bg-navy-dark group relative">
+                <img src="DSC03623.jpg" alt="Portfolio 2" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 ease-in-out">
+                <div class="absolute inset-0 bg-navy opacity-0 group-hover:opacity-20 transition duration-500"></div>
+            </div>
+            <!-- Item 3 -->
+            <div class="aspect-[4/5] overflow-hidden bg-navy-dark group relative">
+                <img src="DSC03549.jpg" alt="Portfolio 3" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 ease-in-out">
+                <div class="absolute inset-0 bg-navy opacity-0 group-hover:opacity-20 transition duration-500"></div>
+            </div>
+            <!-- Item 4 -->
+            <div class="aspect-[4/5] overflow-hidden bg-navy-dark group relative">
+                <img src="DSC03366.jpg" alt="Portfolio 4" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 ease-in-out">
+                <div class="absolute inset-0 bg-navy opacity-0 group-hover:opacity-20 transition duration-500"></div>
+            </div>
+            <!-- Item 5 -->
+            <div class="aspect-[4/5] overflow-hidden bg-navy-dark group relative">
+                <img src="DSC04094.jpg" alt="Portfolio 5" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 ease-in-out">
+                <div class="absolute inset-0 bg-navy opacity-0 group-hover:opacity-20 transition duration-500"></div>
+            </div>
+            <!-- Item 6 -->
+            <div class="aspect-[4/5] overflow-hidden bg-navy-dark group relative">
+                <img src="DSC03889.jpg" alt="Portfolio 6" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 ease-in-out">
+                <div class="absolute inset-0 bg-navy opacity-0 group-hover:opacity-20 transition duration-500"></div>
+            </div>
+            <!-- Item 7 -->
+            <div class="aspect-[4/5] overflow-hidden bg-navy-dark group relative">
+                <img src="DSC03969.jpg" alt="Portfolio 7" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 ease-in-out">
+                <div class="absolute inset-0 bg-navy opacity-0 group-hover:opacity-20 transition duration-500"></div>
+            </div>
+            <!-- Item 8 -->
+            <div class="aspect-[4/5] overflow-hidden bg-navy-dark group relative">
+                <img src="DSC04060.jpg" alt="Portfolio 8" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 ease-in-out">
+                <div class="absolute inset-0 bg-navy opacity-0 group-hover:opacity-20 transition duration-500"></div>
+            </div>
+        </div>
+        
+        <div class="py-12 bg-cream text-center">
+            <a href="https://www.instagram.com/deexelgraduation/" target="_blank" class="text-navy font-bold hover:text-gold transition inline-flex items-center gap-2 text-lg">
+                Lihat lebih banyak di Instagram <i class="fab fa-instagram text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Call to Action (Contact) -->
+    <section id="contact" class="py-20 bg-gold text-white text-center relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-navy opacity-10 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
+        
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-navy">Siap Mengabadikan Momenmu?</h2>
+            <p class="mt-4 text-lg md:text-xl text-navy opacity-80 mb-10 font-medium">
+                Slot jadwal foto outdoor kami terbatas setiap minggunya. Segera amankan jadwal wisudamu sekarang!
+            </p>
+            <a href="https://wa.me/6285190335231" target="_blank" class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-bold rounded-full text-white bg-navy hover:bg-navy-light hover:scale-105 transition shadow-xl w-full sm:w-auto">
+                <i class="fab fa-whatsapp text-green-400 mr-3 text-2xl"></i> Chat Admin via WhatsApp
+            </a>
+            <p class="mt-6 text-sm text-navy opacity-70 font-medium">*Siapkan bukti transfer DP Rp 100.000 untuk mengunci jadwal.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-dark text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0 flex flex-col items-center md:items-start text-center md:text-left">
+                <div class="flex items-center gap-3 mb-2">
+                    <img src="logo.png" alt="Logo" class="h-10 w-10 rounded-full object-cover">
+                    <span class="font-bold text-2xl text-cream tracking-tight font-serif">Deexel<span class="text-gold italic">Graduation.</span></span>
+                </div>
+                <p class="mt-2 text-sm text-gray-500 font-light">Professional Outdoor Graduation Photography.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="https://www.instagram.com/deexelgraduation/" target="_blank" class="text-gray-400 hover:text-gold transition">
+                    <span class="sr-only">Instagram</span>
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="https://www.tiktok.com/@deexelstudios" class="text-gray-400 hover:text-gold transition">
+                    <span class="sr-only">Tiktok</span>
+                    <i class="fab fa-tiktok text-2xl"></i>
+                </a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 border-t border-gray-800 pt-8 text-sm text-center font-light">
+            &copy; 2026 Deexel Graduation. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Script Menu Mobile -->
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
